@@ -1,0 +1,9 @@
+ln -s vimrc /your/home/.vimrc
+
+ln -s bash_aliases /your/home/.bash_aliases
+
+Make sure on your .bashrc you have theses lines:
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
