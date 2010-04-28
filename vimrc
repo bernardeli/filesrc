@@ -11,7 +11,7 @@ set guioptions-=T
 let g:fuzzy_ignore = "gems/*"
 let g:fuzzy_ignore = "vendor/*"
 let g:fuzzy_ignore = "db/asp/minisite_images/*"
-nmap :W :w
+
 nmap <tab> gt
 nmap <s-tab> gT
 nmap <F2> :BufExplorer<Enter>
