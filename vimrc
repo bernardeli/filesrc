@@ -21,4 +21,5 @@ map <F5> I#<Esc>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
+  autocmd BufRead,BufNewFile *.atom.build set filetype=ruby
 augroup END
