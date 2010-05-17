@@ -7,6 +7,8 @@ alias monta='vai; script/server'
 alias pd='params_debugger'
 alias homo='ssh homolog@10.11.13.123' 
 alias baixa='git co master; git fetch; git pull --rebase origin master'
+alias raul='ssh raul@10.11.13.126'
+alias dmc01='ssh dmc01@10.11.13.121'
 
 # git branchs
 function find_git_branch {

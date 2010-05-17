@@ -18,6 +18,7 @@ nmap <F2> :BufExplorer<Enter>
 nmap <F3> :noh<Enter>
 nmap <F4> gg=G''
 map <F5> I#<Esc>
+map <C-C> ,c<Space>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
