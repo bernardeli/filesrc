@@ -19,6 +19,7 @@ nmap <F3> :noh<Enter>
 nmap <F4> gg=G''
 map <F5> I#<Esc>
 map <C-C> ,c<Space>
+nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
