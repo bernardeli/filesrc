@@ -1,6 +1,6 @@
 source ~/.vim/vimrc
 
-colorscheme desert
+colorscheme desert 
 set nu
 set sts=2
 set sw=2
@@ -19,7 +19,13 @@ nmap <F3> :noh<Enter>
 nmap <F4> gg=G''
 map <F5> I#<Esc>
 map <C-C> ,c<Space>
+map <C-L> :noh<Enter>
+cmap <F8> vendor/extensions/site/
+cmap <C-t> tabnew <F8>
 nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+nmap <silent> <C-t> :CommandT<Enter>
+
+ab rdb require 'ruby-debug';debugger
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
