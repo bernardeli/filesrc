@@ -5,6 +5,7 @@ alias sl='sl -e'
 alias prod='cd ~/projects/prod'
 alias pd='params_debugger'
 alias vai='cd ~/projects/edelivery'
+alias vais='cd ~/projects/edelivery/vendor/extensions/site'
 
 # git branchs
 function find_git_branch {
