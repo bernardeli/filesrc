@@ -6,6 +6,7 @@ alias prod='cd ~/projects/prod'
 alias pd='params_debugger'
 alias vai='cd ~/projects/edelivery'
 alias vais='cd ~/projects/edelivery/vendor/extensions/site'
+alias themis='cd ~/projects/themis'
 
 # git branchs
 function find_git_branch {
@@ -31,9 +32,12 @@ PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
 
 green=$'\e[13m'
 magenta=$'\e[1;36m'
+blue=$'\e[1;34m'
 normal_colours=$'\e[m'
 
-PS1="\[$green\]\u@\h:\w\[$magenta\]\$git_branch\[$green\]\\$\[$normal_colours\] "
+rvm="\$(~/.rvm/bin/rvm-prompt i v p g)"
+
+PS1="\[$green\]\u@\h:\w\[$blue\] (\$(~/.rvm/bin/rvm-prompt v p g))\[$magenta\]\$git_branch\[$green\]\\$\[$normal_colours\] "
 # git branch done
 
 alias gvim="gvim -reverse 2>/dev/null"
