@@ -6,7 +6,7 @@ alias prod='cd ~/projects/prod'
 alias pd='params_debugger'
 alias vai='cd ~/projects/edelivery'
 alias vais='cd ~/projects/edelivery/vendor/extensions/site'
-alias themis='cd ~/projects/themis'
+alias th='cd ~/projects/themis'
 
 # git branchs
 function find_git_branch {
