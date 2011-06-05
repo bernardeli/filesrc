@@ -1,6 +1,12 @@
 source ~/.vim/vimrc
 
-colorscheme desert 
+colorscheme desert
+
+if has("gui_mac") || has("gui_macvim")
+ colorscheme torte
+ set transparency=15
+endif
+
 set nu
 set sts=2
 set sw=2
@@ -17,7 +23,7 @@ nmap <s-tab> gT
 nmap <F2> :BufExplorer<Enter>
 nmap <F3> :noh<Enter>
 nmap <F4> gg=G''
-map <F5> I#<Esc>
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 map <C-C> ,c<Space>
 map <C-L> :noh<Enter>
 cmap <F8> vendor/extensions/site/
@@ -26,6 +32,14 @@ nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 nmap <silent> <C-t> :CommandT<Enter>
 
 ab rdb require 'ruby-debug';debugger
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
