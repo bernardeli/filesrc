@@ -40,6 +40,13 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+cab W w
+cab Q q
+cab wQ wq
+cab Wq wq
+cab WQ wq
+cab TAbnew tabnew
+cab Tabnew tabnew
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
